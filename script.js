@@ -7,52 +7,58 @@ const perfumes = [
         price: 22.99,
         size: "100ml",
         description: "Bold, warm, and masculine. Perfect for evenings/cold weather.",
-        image: "images/asd.jpeg"
+        image: "images/black.jpeg",
+        gender: "Men"
     },
     {
         id: 2,
-        name: "Lattafa Yara Tous",
-        brand: "Fragrance Profile",
-        price: 22.99,
-        size: "100ml",
-        description: "Citrusy, nutty, sunny. Perfect for spring.",
-        image: "images/yarayellow.jpeg"
-    },
-    {
-        id: 3,
-        name: "Lattafa Yara Moi",
-        brand: "Fragrance Profile",
-        price: 22.99,
-        size: "100ml",
-        description: "Citrusy, nutty, sunny. Perfect for spring.",
-        image: "images/yara.jpeg"
-    },
-    {
-        id: 4,
         name: "Lattafa Zanzibar",
         brand: "Fragrance Profile",
         price: 22.99,
         size: "100ml",
         description: "Fresh, tropical, unisex. Ideal for summer/daytime",
-        image: "images/blue.jpeg"
+        image: "images/blue.jpeg",
+        gender: "Unisex"
+    },
+    {
+        id: 3,
+        name: "Lattafa Yara",
+        brand: "Fragrance Profile",
+        price: 22.99,
+        size: "100ml",
+        description: "Sweet, playful, feminine. Great for casual/day wear.",
+        image: "images/pink.jpeg",
+        gender: "Women"
+    },
+    {
+        id: 4,
+        name: "Lattafa Yara Tous",
+        brand: "Fragrance Profile",
+        price: 22.99,
+        size: "100ml",
+        description: "Citrusy, nutty, sunny. Perfect for spring.",
+        image: "images/yell.jpeg",
+        gender: "Women"
     },
     {
         id: 5,
+        name: "Lattafa Yara Moi",
+        brand: "Fragrance Profile",
+        price: 22.99,
+        size: "100ml",
+        description: "Citrusy, nutty, sunny. Perfect for spring.",
+        image: "images/yara.jpeg",
+        gender: "Women"
+    },
+    {
+        id: 6,
         name: "Lattafa Ana Abiyedh Rouge",
         brand: "Fragrance Profile",
         price: 20.99,
         size: "100ml",
         description: "Rich, gourmand, opulent. Bold evenings.",
-        image: "images/analabyad.jpeg"
-    },
-    {
-        id: 6,
-        name: "Berries, whipped cream, musk.",
-        brand: "Fragrance Profile",
-        price: 22.99,
-        size: "100ml",
-        description: "Sweet, playful, feminine. Great for casual/day wear.",
-        image: "images/pink.jpeg"
+        image: "images/analabyad.jpeg",
+        gender: "Unisex"
     },
     {
         id: 7,
@@ -61,7 +67,8 @@ const perfumes = [
         price: 20.99,
         size: "100ml",
         description: "Clean, elegant, office-friendly.",
-        image: "images/white.jpeg"
+        image: "images/white.jpeg",
+        gender: "Unisex"
     },
     // {
     //     id: 8,
@@ -95,7 +102,10 @@ function createPerfumeCards() {
                         <h3>${perfume.name}</h3>
                         <p>${perfume.brand}</p>
                     </div>
-                    <span class="perfume-size">${perfume.size}</span>
+                    <div class="perfume-info">
+                        <span class="perfume-gender">${perfume.gender}</span>
+                        <span class="perfume-size">${perfume.size}</span>
+                    </div>
                 </div>
                 <p class="perfume-description">${perfume.description}</p>
                 <div class="perfume-footer">
