@@ -2,76 +2,76 @@
 const perfumes = [
     {
         id: 1,
-        name: "Midnight Rose",
-        brand: "Elegance",
-        price: 89.99,
-        size: "50ml",
-        description: "A captivating blend of rose, vanilla, and amber that creates a mysterious and alluring scent.",
-        image: "https://cdn.pixabay.com/photo/2023/11/27/09/25/ai-generated-8414957_1280.png"
+        name: "Lattafa Asad",
+        brand: "Fragrance Profile",
+        price: 22.99,
+        size: "10ml",
+        description: "Bold, warm, and masculine. Perfect for evenings/cold weather.",
+        image: "images/asd.jpeg"
     },
     {
         id: 2,
-        name: "Ocean Breeze",
-        brand: "Aqua Luxe",
-        price: 75.50,
+        name: "Lattafa Yara Tous",
+        brand: "Fragrance Profile",
+        price: 22.99,
         size: "100ml",
-        description: "Fresh and invigorating with notes of sea salt, citrus, and cedar wood for a clean, crisp fragrance.",
-        image: "https://cdn.pixabay.com/photo/2017/06/09/15/40/bottle-2387210_1280.jpg"
+        description: "Citrusy, nutty, sunny. Perfect for spring.",
+        image: "images/yarayellow.jpeg"
     },
     {
         id: 3,
-        name: "Golden Oud",
-        brand: "Royal Collection",
-        price: 120.00,
-        size: "75ml",
-        description: "A rich and opulent fragrance featuring oud, saffron, and patchouli for a luxurious experience.",
-        image: "https://cdn.pixabay.com/photo/2024/04/29/13/54/ai-generated-8727927_1280.jpg"
+        name: "Lattafa Yara Moi",
+        brand: "Fragrance Profile",
+        price: 22.99,
+        size: "100ml",
+        description: "Citrusy, nutty, sunny. Perfect for spring.",
+        image: "images/yara.jpeg"
     },
     {
         id: 4,
-        name: "Velvet Orchid",
-        brand: "Floral Dreams",
-        price: 95.00,
-        size: "50ml",
-        description: "An elegant composition of orchid, honey, and sandalwood creating a sophisticated feminine scent.",
-        image: "https://cdn.pixabay.com/photo/2024/01/09/16/30/perfume-8497908_1280.jpg"
+        name: "Lattafa Zanzibar",
+        brand: "Fragrance Profile",
+        price: 22.99,
+        size: "100ml",
+        description: "Fresh, tropical, unisex. Ideal for summer/daytime",
+        image: "images/blue.jpeg"
     },
     {
         id: 5,
-        name: "Citrus Explosion",
-        brand: "Fresh Vibes",
-        price: 65.99,
+        name: "Lattafa Ana Abiyedh Rouge",
+        brand: "Fragrance Profile",
+        price: 20.99,
         size: "100ml",
-        description: "Energizing blend of lemon, bergamot, and grapefruit for a refreshing daytime fragrance.",
-        image: "https://cdn.pixabay.com/photo/2024/05/09/21/47/ai-generated-8751912_1280.png"
+        description: "Rich, gourmand, opulent. Bold evenings.",
+        image: "images/analabyad.jpeg"
     },
     {
         id: 6,
-        name: "Noir Intense",
-        brand: "Midnight Collection",
-        price: 110.00,
-        size: "75ml",
-        description: "A bold and sophisticated fragrance with notes of black pepper, leather, and tobacco.",
-        image: "https://cdn.pixabay.com/photo/2019/04/23/06/10/perfume-4148638_1280.jpg"
+        name: "Berries, whipped cream, musk.",
+        brand: "Fragrance Profile",
+        price: 22.99,
+        size: "100ml",
+        description: "Sweet, playful, feminine. Great for casual/day wear.",
+        image: "images/pink.jpeg"
     },
     {
         id: 7,
-        name: "Cherry Blossom",
-        brand: "Spring Essence",
-        price: 79.99,
-        size: "50ml",
-        description: "A delicate and romantic scent featuring cherry blossom, peony, and white musk.",
-        image: "https://cdn.pixabay.com/photo/2019/11/29/10/03/perfume-4660970_1280.jpg"
-    },
-    {
-        id: 8,
-        name: "Amber Wood",
-        brand: "Natural Elements",
-        price: 85.00,
+        name: "Jasmine, sandalwood, white musk.",
+        brand: "Fragrance Profile",
+        price: 20.99,
         size: "100ml",
-        description: "Warm and comforting with amber, cedarwood, and vanilla for a cozy and inviting aura.",
-        image: "https://cdn.pixabay.com/photo/2014/08/17/20/24/perfume-420174_1280.jpg"
-    }
+        description: "Clean, elegant, office-friendly.",
+        image: "images/white.jpeg"
+    },
+    // {
+    //     id: 8,
+    //     name: "Amber Wood",
+    //     brand: "Natural Elements",
+    //     price: 85.00,
+    //     size: "100ml",
+    //     description: "Warm and comforting with amber, cedarwood, and vanilla for a cozy and inviting aura.",
+    //     image: "https://cdn.pixabay.com/photo/2014/08/17/20/24/perfume-420174_1280.jpg"
+    // }
 ];
 
 // Function to format price with 2 decimal places
@@ -131,7 +131,7 @@ function setupWhatsAppButtons() {
                 const encodedMessage = encodeURIComponent(message);
                 
                 // Open WhatsApp with the pre-filled message
-                window.open(`https://wa.me/81985614?text=${encodedMessage}`, '_blank');
+                window.open(`https://wa.me/76939876?text=${encodedMessage}`, '_blank');
             }
         });
     });
