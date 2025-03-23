@@ -5,7 +5,7 @@ const perfumes = [
         name: "Lattafa Asad",
         brand: "Fragrance Profile",
         price: 22.99,
-        size: "10ml",
+        size: "100ml",
         description: "Bold, warm, and masculine. Perfect for evenings/cold weather.",
         image: "images/asd.jpeg"
     },
