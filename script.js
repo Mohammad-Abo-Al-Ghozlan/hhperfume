@@ -132,7 +132,7 @@ function setupWhatsAppButtons() {
             
             if (perfume) {
                 // Create a more detailed message with a link to view the product
-                const message = `Hello, I'm interested in purchasing:\n\n*${perfume.name}*\n${perfume.brand} - ${perfume.size}\nFor: ${perfume.gender}\nPrice: $${formatPrice(perfume.price)}\n\nView product: ${window.location.origin}/images/${perfume.image}`;
+                const message = `Hello, I'm interested in purchasing:\n\n*${perfume.name}*\n${perfume.brand} - ${perfume.size}\nFor: ${perfume.gender}\nPrice: $${formatPrice(perfume.price)}\n\nView product: ${window.location.origin}/${perfume.image}`;
                 
                 const encodedMessage = encodeURIComponent(message);
                 window.open(`https://wa.me/76939876?text=${encodedMessage}`, '_blank');
