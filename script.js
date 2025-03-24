@@ -125,6 +125,7 @@ function createPerfumeCards() {
 // ... existing code ...
 
 // Function to handle WhatsApp button click
+// Function to handle WhatsApp button click
 function setupWhatsAppButtons() {
     const buttons = document.querySelectorAll('.whatsapp-button');
     
@@ -136,19 +137,23 @@ function setupWhatsAppButtons() {
             if (perfume) {
                 // Replace with your actual WhatsApp number
                 const phoneNumber = "76939876";
-                
-                // Create the message with product details but without trying to include the image
-                const message = `Hello, I'm interested in purchasing:\n\n*${perfume.name}*\n${perfume.brand} - ${perfume.size}\nPrice: $${formatPrice(perfume.price)}`;
-                
+
+                // Image link (assuming you have a URL for each product image)
+                const imageUrl = perfume.image;  // Make sure perfume object has an 'image' property
+
+                // Create the message
+                const message = `Hello, I'm interested in purchasing:\n\n*${perfume.name}*\n${perfume.brand} - ${perfume.size}\nPrice: $${formatPrice(perfume.price)}\n\n🖼️ *Image:* ${imageUrl}`;
+
                 // Encode the message for URL
                 const encodedMessage = encodeURIComponent(message);
-                
+
                 // Open WhatsApp with the pre-filled message
                 window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
             }
         });
     });
 }
+
 
 // ... rest of the code remains the same ...
 
