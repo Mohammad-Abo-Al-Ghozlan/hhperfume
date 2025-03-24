@@ -122,6 +122,8 @@ function createPerfumeCards() {
 }
 
 // Function to handle WhatsApp button click
+// ... existing code ...
+
 function setupWhatsAppButtons() {
     const buttons = document.querySelectorAll('.whatsapp-button');
     
@@ -131,11 +133,8 @@ function setupWhatsAppButtons() {
             const perfume = perfumes.find(p => p.id === perfumeId);
             
             if (perfume) {
-                // Replace with your actual WhatsApp number
-                const phoneNumber = "1234567890";
-                
-                // Create the message with product details
-                const message = `Hello, I'm interested in purchasing:\n\n*${perfume.name}*\n${perfume.brand} - ${perfume.size}\nPrice: $${formatPrice(perfume.price)}\n\n${perfume.image}`;
+                // Create the message with product details (without image URL)
+                const message = `Hello, I'm interested in purchasing:\n\n*${perfume.name}*\n${perfume.brand} - ${perfume.size}\nFor: ${perfume.gender}\nPrice: $${formatPrice(perfume.price)}`;
                 
                 // Encode the message for URL
                 const encodedMessage = encodeURIComponent(message);
@@ -146,6 +145,8 @@ function setupWhatsAppButtons() {
         });
     });
 }
+
+// ... rest of the code remains the same ...
 
 // Set current year in footer
 function setCurrentYear() {
