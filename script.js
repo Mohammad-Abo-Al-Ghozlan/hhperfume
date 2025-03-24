@@ -131,17 +131,11 @@ function setupWhatsAppButtons() {
             const perfume = perfumes.find(p => p.id === perfumeId);
             
             if (perfume) {
-                // Replace with your actual WhatsApp number
-                const phoneNumber = "76939876";
+                // Create a more detailed message with a link to view the product
+                const message = `Hello, I'm interested in purchasing:\n\n*${perfume.name}*\n${perfume.brand} - ${perfume.size}\nFor: ${perfume.gender}\nPrice: $${formatPrice(perfume.price)}\n\nView product: ${window.location.origin}/images/${perfume.image}`;
                 
-                // Create the message with product details but without trying to include the image
-                const message = `Hello, I'm interested in purchasing:\n\n*${perfume.name}*\n${perfume.brand} - ${perfume.size}\nPrice: $${formatPrice(perfume.price)}`;
-                
-                // Encode the message for URL
                 const encodedMessage = encodeURIComponent(message);
-                
-                // Open WhatsApp with the pre-filled message
-                window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+                window.open(`https://wa.me/76939876?text=${encodedMessage}`, '_blank');
             }
         });
     });
