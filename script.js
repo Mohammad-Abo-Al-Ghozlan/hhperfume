@@ -46,7 +46,7 @@ const perfumes = [
         brand: "Fragrance Profile",
         price: 22.99,
         size: "100ml",
-        description: "Citrusy, nutty, sunny. Perfect for spring.",
+        description: "Clean, elegant, office-friendly.",
         image: "images/yara.jpeg",
         gender: "Women"
     },
@@ -62,11 +62,11 @@ const perfumes = [
     },
     {
         id: 7,
-        name: "Jasmine, sandalwood, white musk.",
-        brand: "Fragrance Profile",
+        name: "Lattafa Ana Abiyedh",
+        brand: "Jasmine, sandalwood, white musk.",
         price: 20.99,
         size: "100ml",
-        description: "Clean, elegant, office-friendly.",
+        description: "Airy, sweet, versatile. Daily/all-season wear",
         image: "images/white.jpeg",
         gender: "Unisex"
     },
