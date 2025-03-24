@@ -63,7 +63,7 @@ const perfumes = [
     {
         id: 7,
         name: "Lattafa Ana Abiyedh",
-        brand: "Jasmine, sandalwood, white musk.",
+        brand: "Fragrance Profile",
         price: 20.99,
         size: "100ml",
         description: "Airy, sweet, versatile. Daily/all-season wear",
